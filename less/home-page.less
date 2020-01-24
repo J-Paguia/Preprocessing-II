@@ -59,3 +59,148 @@
     }
   }
 }// home
+
+header   {
+  padding-top: 2%;
+
+  img {
+     width: 800px;;
+  
+  }
+
+
+
+  .sub-header, .bottom-header {
+     padding-left: 2%;
+     padding-right: 2%;
+     width: 800px;
+     margin: 0 auto;
+  }
+
+  .sub-header {
+     display: flex;
+     justify-content: space-between;
+
+     @media @mobile {
+           flex-direction: column;
+           width: 500px;
+
+           h1 {
+              text-align: center;
+              width: 500px;
+           }
+
+          
+        }
+  
+  }
+
+  .bottom-header {
+     border-bottom: 2px dashed darkgrey;
+     padding-bottom: 2%;
+
+     h2 {
+        padding-top: 2%;
+     }
+  }
+  
+}
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+}
+
+.container, .home {
+  padding-left: 2%;
+  padding-right: 2%;
+  width: 800px;
+  margin: 0 auto;
+}
+
+a  {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: darkgrey;
+}
+
+.dashed-line {
+  border-top: 2px dashed darkgrey;
+}
+
+
+
+  @media (max-width: 500px) {
+  
+     header p {
+        width: 500px;
+        padding-right: 4%;
+        justify-content: space-evenly;
+     }
+     .container {
+        width: 100%;
+     }
+  
+     header img  {
+        width: 500px;
+        padding-right: 4%;
+        
+     }
+     .content-section {
+        flex-direction: column;
+     }
+  
+     .content-section img {
+        width: 500px;
+     }
+  
+     .content-section .text-content {
+        width: 100%;
+        padding-right: 2%;
+     }
+  
+     .inverse-content {
+        display: flex;
+        flex-direction: column-reverse;
+     }
+  
+  
+     .home .content-section .text-content {
+        width: 100%;
+     }
+  
+     .home .content-section .img-content {
+        width: 100%;
+        border: 1px solid green;
+     }
+  
+     .home .content-destination {
+        width: 100%;
+     }
+     .home .content-section .img-content {
+        width: 100%;
+        padding-left: 0;
+     }
+  
+     .content-section.inverse-content .img-content {
+        width: 100%;
+        padding-right: 0;
+     }
+  
+     .home .content-pick {
+        flex-direction: column;
+        padding-left: 9%;
+        padding-right: 4%;
+     }
+  
+     .home .content-pick .destination {
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+     }
+  
+     
+     
+     
+  
+  }

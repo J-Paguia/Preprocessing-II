@@ -1,1 +1,18 @@
 // Mixins in here
+.btn-color(@font-color, @bg-color) {
+   color: @font-color;
+   background-color: @bg-color;
+}
+
+.btn{
+   .btn-color(white, #0C807F );
+   //background-color: #0C807F;
+   //color: white;
+   height: 35px;
+   border-radius: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 1.5rem;
+   width: 90%;
+ }
